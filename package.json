@@ -1,0 +1,14 @@
+{
+  "name": "advanced-react",
+  "version": "1.0.0",
+  "description": "Advanced React and node js",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mudasar Rauf",
+  "license": "ISC"
+}
