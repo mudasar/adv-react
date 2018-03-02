@@ -41,6 +41,11 @@ export class App extends Component {
       super(props);
   }
   
+  articleActions = {
+    lookupAuthor: (authorId) => this.state.authors[authorId],
+
+  };
+
 
   render() {
     const { classes } = this.props;
@@ -57,7 +62,7 @@ export class App extends Component {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-      <ArticleList authors={this.state.authors} articles={this.state.articles} />
+      <ArticleList articleActions={this.articleActions} articles={this.state.articles} />
     </div>
     )
   }

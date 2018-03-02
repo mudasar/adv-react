@@ -22,21 +22,11 @@ export class ArticleList extends Component {
 
   render() {
 
-    const { classes, articles, authors } = this.props;
+    const { classes, articles, articleActions } = this.props;
 
     return (
       <div>
-      <Paper className={classes.root} elevation={4}>
-        <Typography variant="headline" component="h3">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-        Article List
-          Paper can be used to build surface or other elements for your application.
-          {Object.values(articles).map(article => <Article key={article.id} article={article} author={authors[article.authorId]} />)}
-        </Typography>
-      </Paper>
-        
+          {Object.values(articles).map( (article) => <Article key={article.id} article={article} actions={articleActions} />)}
       </div>
     )
   }

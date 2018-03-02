@@ -9,6 +9,7 @@ import Typography from 'material-ui/Typography';
 const styles = theme => ({
     card: {
       minWidth: 275,
+      margin: '10px 25px',
     },
     bullet: {
       display: 'inline-block',
@@ -26,19 +27,26 @@ const styles = theme => ({
     },
   });
 
-export const Article = ({classes, article, author}) => {
+  const displayDate = (date) =>{
+    return new Date(date).toDateString();
+  }
+
+export const Article = ({classes, article, actions}) => {
     const bull = <span className={classes.bullet}>•</span>;
+    let author = actions.lookupAuthor(article.authorId);
     return (
         <Card className={classes.card}>
         <CardContent>
-          <Typography className={classes.title}>Word of the Day</Typography>
+          <Typography className={classes.title}>{displayDate(article.date)}</Typography>
           <Typography variant="headline" component="h2">
-            be{bull}nev{bull}o{bull}lent
+          {article.title}
           </Typography>
-          <Typography className={classes.pos}>adjective</Typography>
+          <a href={author.website}>
+            <Typography className={classes.pos} component="span" >{author.firstName} {author.lastName}</Typography>
+          </a>
+          
           <Typography component="p">
-            well meaning and kindly.<br />
-            {'"a benevolent smile"'}
+            {article.body}
           </Typography>
         </CardContent>
         <CardActions>

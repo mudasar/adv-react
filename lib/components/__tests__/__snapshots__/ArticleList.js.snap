@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList renders correctly 1`] = `
+<div>
+  <div
+    className="MuiPaper-root-6 MuiPaper-shadow2-10 MuiPaper-rounded-7 Article-card-2"
+  >
+    <div
+      className="MuiCardContent-root-33"
+    >
+      <p
+        className="MuiTypography-root-34 MuiTypography-body1-43 Article-title-4"
+      >
+        Invalid Date
+      </p>
+      <h2
+        className="MuiTypography-root-34 MuiTypography-headline-39"
+      />
+      <a
+        href={undefined}
+      >
+        <span
+          className="MuiTypography-root-34 MuiTypography-body1-43 Article-pos-5"
+        >
+           
+        </span>
+      </a>
+      <p
+        className="MuiTypography-root-34 MuiTypography-body1-43"
+      />
+    </div>
+    <div
+      className="MuiCardActions-root-58"
+    >
+      <button
+        className="MuiButtonBase-root-75 MuiButton-root-60 MuiButton-sizeSmall-72 MuiCardActions-action-59"
+        disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-61"
+        >
+          Learn More
+        </span>
+        <span
+          className="MuiTouchRipple-root-77"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root-6 MuiPaper-shadow2-10 MuiPaper-rounded-7 Article-card-2"
+  >
+    <div
+      className="MuiCardContent-root-33"
+    >
+      <p
+        className="MuiTypography-root-34 MuiTypography-body1-43 Article-title-4"
+      >
+        Invalid Date
+      </p>
+      <h2
+        className="MuiTypography-root-34 MuiTypography-headline-39"
+      />
+      <a
+        href={undefined}
+      >
+        <span
+          className="MuiTypography-root-34 MuiTypography-body1-43 Article-pos-5"
+        >
+           
+        </span>
+      </a>
+      <p
+        className="MuiTypography-root-34 MuiTypography-body1-43"
+      />
+    </div>
+    <div
+      className="MuiCardActions-root-58"
+    >
+      <button
+        className="MuiButtonBase-root-75 MuiButton-root-60 MuiButton-sizeSmall-72 MuiCardActions-action-59"
+        disabled={false}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-61"
+        >
+          Learn More
+        </span>
+        <span
+          className="MuiTouchRipple-root-77"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
