@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-//import DataApi from '../DataApi';
-//import { data } from '../testData';
 import ArticleList from './ArticleList.jsx';
 import { withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
@@ -31,28 +29,15 @@ export class App extends Component {
   static propTypes = {
 
   }
-
-  state = {
-      articles:this.props.initialData.articles,
-      authors:this.props.initialData.authors,
+  static childContextTypes = {
+    store: PropTypes.object,
   }
-  
-  articleActions = {
-    lookupAuthor: (authorId) => this.state.authors[authorId],
 
-  };
+  getChildContext(){
+    return {store: this.props.store};
+  }
 
-  // async componentDidMount() {
-  //   const resp = await axios.get('/data');
-  //   const api = new DataApi(resp.data);
-  //   this.setState(()=>{
-  //     return {
-  //       articles: api.getArticles(),
-  //       authors: api.getAuthors()
-  //     };
-  //   });
-  // }
-
+  state = this.props.store.getState();
 
   render() {
     const { classes } = this.props;
@@ -69,7 +54,7 @@ export class App extends Component {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-      <ArticleList articleActions={this.articleActions} articles={this.state.articles} />
+      <ArticleList store={this.props.store} articles={this.state.articles} />
     </div>
     )
   }

@@ -1,120 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleList renders correctly 1`] = `
-<div>
-  <div
-    className="MuiPaper-root-6 MuiPaper-shadow2-10 MuiPaper-rounded-7 Article-card-2"
-  >
-    <div
-      className="MuiCardContent-root-33"
-    >
-      <p
-        className="MuiTypography-root-34 MuiTypography-body1-43 Article-title-4"
-      >
-        Invalid Date
-      </p>
-      <h2
-        className="MuiTypography-root-34 MuiTypography-headline-39"
-      />
-      <a
-        href={undefined}
-      >
-        <span
-          className="MuiTypography-root-34 MuiTypography-body1-43 Article-pos-5"
-        >
-           
-        </span>
-      </a>
-      <p
-        className="MuiTypography-root-34 MuiTypography-body1-43"
-      />
-    </div>
-    <div
-      className="MuiCardActions-root-58"
-    >
-      <button
-        className="MuiButtonBase-root-75 MuiButton-root-60 MuiButton-sizeSmall-72 MuiCardActions-action-59"
-        disabled={false}
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        <span
-          className="MuiButton-label-61"
-        >
-          Learn More
-        </span>
-        <span
-          className="MuiTouchRipple-root-77"
-        />
-      </button>
-    </div>
-  </div>
-  <div
-    className="MuiPaper-root-6 MuiPaper-shadow2-10 MuiPaper-rounded-7 Article-card-2"
-  >
-    <div
-      className="MuiCardContent-root-33"
-    >
-      <p
-        className="MuiTypography-root-34 MuiTypography-body1-43 Article-title-4"
-      >
-        Invalid Date
-      </p>
-      <h2
-        className="MuiTypography-root-34 MuiTypography-headline-39"
-      />
-      <a
-        href={undefined}
-      >
-        <span
-          className="MuiTypography-root-34 MuiTypography-body1-43 Article-pos-5"
-        >
-           
-        </span>
-      </a>
-      <p
-        className="MuiTypography-root-34 MuiTypography-body1-43"
-      />
-    </div>
-    <div
-      className="MuiCardActions-root-58"
-    >
-      <button
-        className="MuiButtonBase-root-75 MuiButton-root-60 MuiButton-sizeSmall-72 MuiCardActions-action-59"
-        disabled={false}
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        <span
-          className="MuiButton-label-61"
-        >
-          Learn More
-        </span>
-        <span
-          className="MuiTouchRipple-root-77"
-        />
-      </button>
-    </div>
-  </div>
-</div>
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleList
+    articles={
+      Object {
+        "a": Object {
+          "id": "a",
+        },
+        "b": Object {
+          "id": "b",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStylesContainer
+          article={
+            Object {
+              "id": "a",
+            }
+          }
+        />,
+        <WithStylesContainer
+          article={
+            Object {
+              "id": "b",
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "a",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "id": "a",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "b",
+        "nodeType": "function",
+        "props": Object {
+          "article": Object {
+            "id": "b",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStylesContainer
+            article={
+              Object {
+                "id": "a",
+              }
+            }
+          />,
+          <WithStylesContainer
+            article={
+              Object {
+                "id": "b",
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "a",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "id": "a",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "b",
+          "nodeType": "function",
+          "props": Object {
+            "article": Object {
+              "id": "b",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;
