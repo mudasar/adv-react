@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import DataApi from '../DataApi';
-import { data } from '../testData';
+//import DataApi from '../DataApi';
+//import { data } from '../testData';
 import ArticleList from './ArticleList.jsx';
 import { withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
@@ -11,6 +11,8 @@ import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
+
+//import axios from 'axios';
 
 const styles = {
   root: {
@@ -25,26 +27,31 @@ const styles = {
   },
 };
 
-const api = new DataApi(data);
-
 export class App extends Component {
   static propTypes = {
 
   }
 
   state = {
-      articles: api.getArticles(),
-      authors: api.getAuthors()
-  }
-
-  constructor(props) {
-      super(props);
+      articles:this.props.initialData.articles,
+      authors:this.props.initialData.authors,
   }
   
   articleActions = {
     lookupAuthor: (authorId) => this.state.authors[authorId],
 
   };
+
+  // async componentDidMount() {
+  //   const resp = await axios.get('/data');
+  //   const api = new DataApi(resp.data);
+  //   this.setState(()=>{
+  //     return {
+  //       articles: api.getArticles(),
+  //       authors: api.getAuthors()
+  //     };
+  //   });
+  // }
 
 
   render() {
